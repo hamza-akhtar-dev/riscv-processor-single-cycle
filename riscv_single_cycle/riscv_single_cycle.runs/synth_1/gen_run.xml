@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1651159361">
+  <File Type="PA-TCL" Name="Processor.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="Processor_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="Processor_reports.tcl"/>
+  <File Type="RDS-RDS" Name="Processor.vds"/>
+  <File Type="RDS-UTIL" Name="Processor_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="Processor_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="Processor.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="Processor_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="Processor_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/DesignCode/ALU.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/Project Part 2-20220428T144339Z-001/Project Part 2/PP2_2019-EE-12/DesignCode/ALU.v"/>
+        <Attr Name="ImportTime" Val="1613396018"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/DesignCode/Adder.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/Project Part 2-20220428T144339Z-001/Project Part 2/PP2_2019-EE-12/DesignCode/Adder.v"/>
+        <Attr Name="ImportTime" Val="1614627268"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/DesignCode/Controller.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/Project Part 2-20220428T144339Z-001/Project Part 2/PP2_2019-EE-12/DesignCode/Controller.v"/>
+        <Attr Name="ImportTime" Val="1614746618"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/DesignCode/DataMemory.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/Project Part 2-20220428T144339Z-001/Project Part 2/PP2_2019-EE-12/DesignCode/DataMemory.v"/>
+        <Attr Name="ImportTime" Val="1614635744"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/DesignCode/DataPath.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/Project Part 2-20220428T144339Z-001/Project Part 2/PP2_2019-EE-12/DesignCode/DataPath.v"/>
+        <Attr Name="ImportTime" Val="1614745726"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/DesignCode/Decoder.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/Project Part 2-20220428T144339Z-001/Project Part 2/PP2_2019-EE-12/DesignCode/Decoder.v"/>
+        <Attr Name="ImportTime" Val="1614627106"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/DesignCode/InstructionMemory.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/Project Part 2-20220428T144339Z-001/Project Part 2/PP2_2019-EE-12/DesignCode/InstructionMemory.v"/>
+        <Attr Name="ImportTime" Val="1614638920"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/DesignCode/Multiplexers.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/Project Part 2-20220428T144339Z-001/Project Part 2/PP2_2019-EE-12/DesignCode/Multiplexers.v"/>
+        <Attr Name="ImportTime" Val="1614633130"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/DesignCode/ProgramCounter.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/Project Part 2-20220428T144339Z-001/Project Part 2/PP2_2019-EE-12/DesignCode/ProgramCounter.v"/>
+        <Attr Name="ImportTime" Val="1614634986"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/DesignCode/RegisterFile.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/Project Part 2-20220428T144339Z-001/Project Part 2/PP2_2019-EE-12/DesignCode/RegisterFile.v"/>
+        <Attr Name="ImportTime" Val="1614635760"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/DesignCode/Processor.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/Project Part 2-20220428T144339Z-001/Project Part 2/PP2_2019-EE-12/DesignCode/Processor.v"/>
+        <Attr Name="ImportTime" Val="1613411942"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Processor"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>
