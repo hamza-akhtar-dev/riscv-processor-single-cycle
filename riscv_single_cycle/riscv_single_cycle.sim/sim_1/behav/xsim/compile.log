@@ -25,5 +25,3 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Hamza/Desktop/riscv-single
 INFO: [VRFC 10-311] analyzing module RegisterFile
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sim_1/imports/TestBenches/tb_Processor.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module tb_Processor
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl
