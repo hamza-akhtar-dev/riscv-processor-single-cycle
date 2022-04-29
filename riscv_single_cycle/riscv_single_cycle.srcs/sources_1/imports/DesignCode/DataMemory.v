@@ -1,26 +1,35 @@
+`timescale 1ns / 10ps
+
 module DataMemory(
-	input clk, memWrite,
+	input clk, memRead, memWrite, 
 	input[31:0] addr,
 	input[31:0] wdata,
-	output reg[31:0] rdata
+	output reg[31:0] rdata,
+	output wire [31:0] pin
+	
 );
 
-reg [31:0] data_mem [127:0];
+reg [31:0] data_mem [15:0];
+
+//assign pin = data_mem[2][31:0];
 
 initial
 begin
 	//Initializing Data Memory
-	$readmemh("C:/Users/asus/Documents/Lab Assignments/Digital Systems Design Lab 3rd SEM/Project Part 2/PP2_2019-EE-12/DesignCode/DataMem.txt", data_mem); 
+	$readmemh("DataMem.mem", data_mem); 
 end
 //Synchronous Write
 always@(posedge clk)
 begin
 	if(memWrite) 
 		data_mem[addr] <= wdata;
-end  
+end
+
 //Asynchronuous Read
 always@(*)
 begin
-	rdata <= data_mem[addr];
+    if(memRead)
+	   rdata <= data_mem[addr];
 end  
+
 endmodule

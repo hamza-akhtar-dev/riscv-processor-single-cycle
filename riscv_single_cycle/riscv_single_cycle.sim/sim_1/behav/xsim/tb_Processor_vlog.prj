@@ -1,7 +1,7 @@
 # compile verilog/system verilog design source files
 verilog xil_defaultlib  \
 "../../../../riscv_single_cycle.srcs/sources_1/imports/DesignCode/ALU.v" \
-"../../../../riscv_single_cycle.srcs/sources_1/imports/DesignCode/Adder.v" \
+"../../../../riscv_single_cycle.srcs/sources_1/new/BranchCondition.v" \
 "../../../../riscv_single_cycle.srcs/sources_1/imports/DesignCode/Controller.v" \
 "../../../../riscv_single_cycle.srcs/sources_1/imports/DesignCode/DataMemory.v" \
 "../../../../riscv_single_cycle.srcs/sources_1/imports/DesignCode/DataPath.v" \

@@ -17,6 +17,10 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param synth.incrementalSynthesisCache C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/.Xil/Vivado-4232-DESKTOP-9E4J9LU/incrSyn
+set_param xicom.use_bs_reader 1
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -30,16 +34,23 @@ set_property ip_output_repo c:/Users/Hamza/Desktop/riscv-single-cycle/riscv_sing
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
   C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/ALU.v
-  C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Adder.v
+  C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/new/BranchCondition.v
   C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Controller.v
   C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/DataMemory.v
   C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/DataPath.v
   C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Decoder.v
   C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/InstructionMemory.v
   C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Multiplexers.v
+  C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Processor.v
   C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/ProgramCounter.v
   C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/RegisterFile.v
-  C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Processor.v
+  C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/Downloads/freq_div.v
+  C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/Downloads/mux_out.v
+  C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/Downloads/segment_counter.v
+  C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/Downloads/seven_cathode.v
+  C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/Downloads/seven_seg.v
+  C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/Downloads/seven_seg_anode.v
+  C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/new/Test.v
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -49,15 +60,18 @@ read_verilog -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
+read_xdc C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/constrs_1/new/risc_constraints.xdc
+set_property used_in_implementation false [get_files C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/constrs_1/new/risc_constraints.xdc]
+
 set_param ips.enableIPCacheLiteLoad 0
 close [open __synthesis_is_running__ w]
 
-synth_design -top Processor -part xc7a100tcsg324-1
+synth_design -top Test -part xc7a100tcsg324-1
 
 
 # disable binary constraint mode for synth run checkpoints
 set_param constraints.enableBinaryConstraints false
-write_checkpoint -force -noxdef Processor.dcp
-create_report "synth_1_synth_report_utilization_0" "report_utilization -file Processor_utilization_synth.rpt -pb Processor_utilization_synth.pb"
+write_checkpoint -force -noxdef Test.dcp
+create_report "synth_1_synth_report_utilization_0" "report_utilization -file Test_utilization_synth.rpt -pb Test_utilization_synth.pb"
 file delete __synthesis_is_running__
 close [open __synthesis_is_complete__ w]

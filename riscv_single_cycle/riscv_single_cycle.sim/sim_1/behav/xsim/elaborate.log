@@ -3,38 +3,5 @@ Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
 Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto ffb195d5c08d4749b10a9d250a22231e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_Processor_behav xil_defaultlib.tb_Processor xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
-WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 4 for port ALUop [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/DataPath.v:29]
 Completed static elaboration
-Starting simulation data flow analysis
-WARNING: [XSIM 43-4099] "C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Processor.v" Line 7. Module Processor doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/DataPath.v" Line 4. Module DataPath doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/ProgramCounter.v" Line 1. Module ProgramCounter doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Multiplexers.v" Line 15. Module Mux4x1 doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Adder.v" Line 1. Module Adder doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/InstructionMemory.v" Line 1. Module InstructionMemory doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Decoder.v" Line 1. Module Decoder doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Multiplexers.v" Line 31. Module ImmSelector doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Multiplexers.v" Line 1. Module Mux2x1 doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/RegisterFile.v" Line 1. Module RegisterFile doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/DataMemory.v" Line 1. Module DataMemory doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/ALU.v" Line 1. Module ArithmeticLogicUnit doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Multiplexers.v" Line 15. Module Mux4x1 doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Controller.v" Line 1. Module Controller doesn't have a timescale but at least one module in design has a timescale.
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.ProgramCounter
-Compiling module xil_defaultlib.Mux4x1
-Compiling module xil_defaultlib.Adder
-Compiling module xil_defaultlib.InstructionMemory
-Compiling module xil_defaultlib.Decoder
-Compiling module xil_defaultlib.ImmSelector
-Compiling module xil_defaultlib.Mux2x1
-Compiling module xil_defaultlib.RegisterFile
-Compiling module xil_defaultlib.DataMemory
-Compiling module xil_defaultlib.ArithmeticLogicUnit
-Compiling module xil_defaultlib.DataPath
-Compiling module xil_defaultlib.Controller
-Compiling module xil_defaultlib.Processor
-Compiling module xil_defaultlib.tb_Processor
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot tb_Processor_behav
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

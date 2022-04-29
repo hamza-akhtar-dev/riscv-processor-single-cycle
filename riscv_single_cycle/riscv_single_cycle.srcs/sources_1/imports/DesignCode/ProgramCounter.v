@@ -1,13 +1,15 @@
+`timescale 1ns / 10ps
+
 module ProgramCounter(
 	input rst, clk,
-	input[31:0] PC_in,
-	output reg[31:0] PC_out
+	input[31:0] pc_in,
+	output reg[31:0] pc_out
 );
 always @(posedge clk or posedge rst)
 begin
 	if(rst)
-		PC_out <= 0; // Reset to ZERO
+		pc_out <= 0; // Reset to ZERO
 	else
-		PC_out <= PC_out + PC_in;
+		pc_out <= pc_out + pc_in;
 end
 endmodule

@@ -5,20 +5,18 @@
 //---------------------------------------------------------------------
 
 module Processor(
-	input clk, rst
+	input clk, rst,
+	output wire [31:0] pin
 );
 
-wire isImm, memWrite, rfWrite, zeroFlag, waddrSel;
-wire[1:0] pcSel, wbackSel, immSel;
-wire[2:0] funct3, ALUop;
-wire[6:0] opcode, funct7;
+wire sel_A, sel_B, rf_wr, mem_rd, mem_wr;
+wire [1:0] wb_sel;
+wire [2:0] br_type, funct3, type;
+wire [3:0] alu_op;
+wire [6:0] funct7;
 
-DataPath DP (clk, rst, isImm, memWrite, rfWrite, 
-waddrSel, pcSel, immSel, wbackSel, ALUop, 
-zeroFlag, funct3, opcode, funct7);
+DataPath DP (clk, rst, sel_A, sel_B, rf_wr, mem_rd, mem_wr, wb_sel, br_type, alu_op, funct3, type, funct7, pin);
 
-Controller CTRL (zeroFlag, funct3, opcode, funct7, 
-isImm, memWrite, rfWrite, waddrSel, 
-pcSel, immSel, wbackSel, ALUop);
+Controller CTRL (funct3, type, funct7, sel_A, sel_B, rf_wr, mem_rd, mem_wr, wb_sel, br_type, alu_op);
 
 endmodule

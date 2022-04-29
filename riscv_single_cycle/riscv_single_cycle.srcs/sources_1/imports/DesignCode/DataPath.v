@@ -2,31 +2,31 @@
 //Data Path for RISC-V
 
 module DataPath(
-	input clk, rst, isImm, memWrite, rfWrite, waddrSel, 
-	input[1:0] pcSel, immSel, wbackSel,
-	input[2:0] ALUop,
-	output zeroFlag,
-	output[2:0] funct3,
-	output[6:0] opcode, funct7
+	input clk, rst, sel_A, sel_B, rf_wr, mem_rd, mem_wr,
+	input[1:0] wb_sel,
+	input[2:0] br_type,
+	input[3:0] alu_op,
+	output[2:0] funct3, type,
+	output[6:0] funct7,
+	output wire[31:0] pin
 );
 
-wire[31:0] instruction, wdata, rdata1, rdata2, op2, ALUresult,Br, PC_in, PC_out, LWdata, imm;
-wire[20:0] immJ;
-wire[12:0] immB;
-wire[11:0] immI, immS;
-wire[4:0] src1, src2, dst;
+wire br_taken;
+wire[4:0]  rs1, rs2, rd;
+wire[31:0] pc_in, pc_out, A, B, imm, instruction, wdata, rdata, rdata1, rdata2, alu_out;
 
-reg[31:0] PC4 = 31'd4;
-ProgramCounter PC (rst, clk, PC_in, PC_out);
-Mux4x1 MX1 (pcSel, PC4, imm, ALUresult, 32'd0, PC_in);
-Adder AD1(PC_out, imm, Br);
-InstructionMemory IM (PC_out, instruction);
-Decoder DC (instruction, opcode, funct7, funct3, src1, src2, dst, immI, immS, immB, immJ);
-ImmSelector IS (immSel, immI, immS, immB, immJ, imm); 
-Mux2x1 MX2 (isImm, rdata2, imm, op2);
-RegisterFile RF (clk, rfWrite, src1, src2, dst, wdata, rdata1, rdata2);
-DataMemory DM(clk, memWrite, ALUresult, rdata2, LWdata);
-ArithmeticLogicUnit ALU (ALUop, rdata1, op2, ALUresult, zeroFlag);
-Mux4x1 MX3 (wbackSel, ALUresult, LWdata, PC4, 32'd0, wdata);
+reg[31:0] PC4 = 32'd4;
+
+Mux2x1 MX1 (br_taken, PC4, alu_out, pc_in);
+ProgramCounter PC (rst, clk, pc_in, pc_out);
+InstructionMemory IM (pc_out, instruction);
+Decoder DC (instruction, funct3, type, rs1, rs2, rd, funct7, imm);
+Mux2x1 MX2 (sel_A, rdata1, pc_out, A);
+Mux2x1 MX3 (sel_B, rdata2, imm, B);
+BranchCondition BC (br_type, A, B, br_taken);
+RegisterFile RF (clk, rf_wr, rs1, rs2, rd, wdata, rdata1, rdata2);
+DataMemory DM (clk, mem_rd, mem_wr, alu_out, rdata2, rdata, pin);
+Mux4x1 MX4 (wb_sel, alu_out, rdata, pc_out + PC4, 32'd0, wdata);
+ArithmeticLogicUnit ALU (alu_op, A, B, alu_out);
 
 endmodule

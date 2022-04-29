@@ -1,3 +1,5 @@
+`timescale 1ns / 10ps
+
 module RegisterFile(
 	input clk, rfwrite,
 	input[4:0] raddr1, raddr2, waddr,
@@ -8,7 +10,7 @@ reg [31:0] register_mem [31:0];
 initial
 begin
 	//Initializing Register Memory
-	$readmemh("C:/Users/asus/Documents/Lab Assignments/Digital Systems Design Lab 3rd SEM/Project Part 2/PP2_2019-EE-12/DesignCode/RegisterMem.txt", register_mem); 
+	$readmemh("RegisterMem.mem", register_mem); 
 end
 //Synchronous Write
 always@(posedge clk)
