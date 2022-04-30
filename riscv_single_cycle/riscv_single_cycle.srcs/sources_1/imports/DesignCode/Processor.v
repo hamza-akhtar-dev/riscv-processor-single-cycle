@@ -10,13 +10,13 @@ module Processor(
 );
 
 wire sel_A, sel_B, rf_wr, mem_rd, mem_wr;
-wire [1:0] wb_sel;
+wire [1:0] wb_sel, mem_mode;
 wire [2:0] br_type, funct3, funct;
 wire [3:0] alu_op;
 wire [6:0] funct7;
 
-DataPath DP (clk, rst, sel_A, sel_B, rf_wr, mem_rd, mem_wr, wb_sel, br_type, alu_op, funct3, funct, funct7, pin);
+DataPath DP (clk, rst, sel_A, sel_B, rf_wr, mem_rd, mem_wr, wb_sel, mem_mode, br_type, alu_op, funct3, funct, funct7, pin);
 
-Controller CTRL (funct3, funct, funct7, sel_A, sel_B, rf_wr, mem_rd, mem_wr, wb_sel, br_type, alu_op);
+Controller CTRL (funct3, funct, funct7, sel_A, sel_B, rf_wr, mem_rd, mem_wr, wb_sel, mem_mode, br_type, alu_op);
 
 endmodule

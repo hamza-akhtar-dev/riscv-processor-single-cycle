@@ -2,13 +2,12 @@
 # Webtalk v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Fri Apr 29 21:53:39 2022
-# Process ID: 7072
+# Start of session at: Sat Apr 30 23:13:53 2022
+# Process ID: 11252
 # Current directory: C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.sim/sim_1/behav/xsim
 # Command line: wbtcv.exe -mode batch -source C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.sim/sim_1/behav/xsim/xsim.dir/tb_Processor_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.sim/sim_1/behav/xsim/webtalk.log
 # Journal file: C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.sim/sim_1/behav/xsim\webtalk.jou
 #-----------------------------------------------------------
 source C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.sim/sim_1/behav/xsim/xsim.dir/tb_Processor_behav/webtalk/xsim_webtalk.tcl -notrace
-webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 54.156 ; gain = 1.090
-INFO: [Common 17-206] Exiting Webtalk at Fri Apr 29 21:53:51 2022...
+INFO: [Common 17-206] Exiting Webtalk at Sat Apr 30 23:13:55 2022...

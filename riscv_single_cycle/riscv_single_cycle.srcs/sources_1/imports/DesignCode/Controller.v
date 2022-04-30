@@ -4,10 +4,14 @@ module Controller(
 	input [2:0] funct3, funct,
 	input [6:0] funct7,
 	output reg sel_A, sel_B, rf_wr, mem_rd, mem_wr,
-	output reg [1:0]  wb_sel, 
-	output reg [2:0]  br_type,
+	output reg [1:0]  wb_sel, mem_mode,
+	output reg [2:0]  br_type, 
 	output reg [3:0] alu_op
 );
+
+parameter Byte = 2'b00;
+parameter HalfWord = 2'b01;
+parameter Word = 2'b10;
 
 parameter R_Type_Comp = 3'b000;
 parameter I_Type_Comp = 3'b001;
@@ -72,6 +76,11 @@ begin
            wb_sel = 2'd1;
            alu_op = ADD;
            br_type = NB;
+           case(funct3)
+              2'b00: mem_mode = Byte;
+              2'b01: mem_mode = HalfWord;
+              2'b10: mem_mode = Word;
+           endcase
         end
         
         I_Type_Jump: 
@@ -96,6 +105,11 @@ begin
            wb_sel = 2'd0;
            alu_op = ADD;
            br_type = NB;
+           case(funct3)
+                 2'b00: mem_mode = Byte;
+                 2'b01: mem_mode = HalfWord;
+                 2'b10: mem_mode = Word;
+           endcase
 		end
 		
 		B_Type_Jump: 
