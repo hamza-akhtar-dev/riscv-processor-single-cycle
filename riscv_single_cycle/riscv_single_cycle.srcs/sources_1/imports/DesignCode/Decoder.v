@@ -32,7 +32,7 @@ begin
         7'b0100011: type = S_type;
         7'b1100011: type = B_type;
         7'b0110111: type = U_type;
-        7'b1100111: type = J_type;
+        7'b1101111: type = J_type;
    endcase
 end
 

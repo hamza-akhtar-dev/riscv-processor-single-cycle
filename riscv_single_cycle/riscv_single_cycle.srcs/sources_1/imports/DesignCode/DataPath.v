@@ -17,13 +17,13 @@ wire[31:0] pc_in, pc_out, A, B, imm, instruction, wdata, rdata, rdata1, rdata2, 
 
 reg[31:0] PC4 = 32'd4;
 
-Mux2x1 MX1 (br_taken, PC4, alu_out, pc_in);
+Mux2x1 MX1 (br_taken, pc_out + PC4, alu_out, pc_in);
 ProgramCounter PC (rst, clk, pc_in, pc_out);
 InstructionMemory IM (pc_out, instruction);
 Decoder DC (instruction, funct3, type, rs1, rs2, rd, funct7, imm);
 Mux2x1 MX2 (sel_A, rdata1, pc_out, A);
 Mux2x1 MX3 (sel_B, rdata2, imm, B);
-BranchCondition BC (br_type, A, B, br_taken);
+BranchCondition BC (br_type, rdata1, rdata2, br_taken);
 RegisterFile RF (clk, rf_wr, rs1, rs2, rd, wdata, rdata1, rdata2);
 DataMemory DM (clk, mem_rd, mem_wr, alu_out, rdata2, rdata, pin);
 Mux4x1 MX4 (wb_sel, alu_out, rdata, pc_out + PC4, 32'd0, wdata);

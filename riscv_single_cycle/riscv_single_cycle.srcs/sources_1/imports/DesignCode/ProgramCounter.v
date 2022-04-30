@@ -10,6 +10,6 @@ begin
 	if(rst)
 		pc_out <= 0; // Reset to ZERO
 	else
-		pc_out <= pc_out + pc_in;
+		pc_out <= pc_in;
 end
 endmodule

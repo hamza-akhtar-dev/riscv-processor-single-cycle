@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1651209258">
-  <File Type="PA-TCL" Name="Test.tcl"/>
   <File Type="BITSTR-BMM" Name="Test_bd.bmm"/>
-  <File Type="REPORTS-TCL" Name="Test_reports.tcl"/>
+  <File Type="PA-TCL" Name="Test.tcl"/>
   <File Type="OPT-DCP" Name="Test_opt.dcp"/>
+  <File Type="REPORTS-TCL" Name="Test_reports.tcl"/>
   <File Type="OPT-HWDEF" Name="Test.hwdef"/>
+  <File Type="BG-BGN" Name="Test.bgn"/>
   <File Type="PWROPT-DCP" Name="Test_pwropt.dcp"/>
   <File Type="PLACE-DCP" Name="Test_placed.dcp"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="Test_incremental_reuse_pre_placed.rpt"/>
-  <File Type="BG-BGN" Name="Test.bgn"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="Test_postplace_pwropt.dcp"/>
   <File Type="BG-BIN" Name="Test.bin"/>
   <File Type="PHYSOPT-DCP" Name="Test_physopt.dcp"/>
