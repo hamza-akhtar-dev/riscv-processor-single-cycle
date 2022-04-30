@@ -16,6 +16,8 @@ initial
 initial
 	begin
 		rst_dut;
+		#180;
+		$stop;
 	end
 //----Reset Sequence----//
 task rst_dut;

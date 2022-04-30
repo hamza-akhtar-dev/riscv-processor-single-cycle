@@ -1,7 +1,7 @@
 `timescale 1ns / 10ps
 
 module Controller(
-	input [2:0] funct3, type,
+	input [2:0] funct3, funct,
 	input [6:0] funct7,
 	output reg sel_A, sel_B, rf_wr, mem_rd, mem_wr,
 	output reg [1:0]  wb_sel, 
@@ -9,13 +9,14 @@ module Controller(
 	output reg [3:0] alu_op
 );
 
-parameter R_type = 3'b000; //R_Type
-parameter I_type = 3'b001; //I-Type
-parameter L_type = 3'b010; //L-Type
-parameter S_type= 3'b011;  //S-Type
-parameter B_type= 3'b100;  //B-Type
-parameter U_type= 3'b101;  //U-Type
-parameter J_type= 3'b110;  //J-Type
+parameter R_Type_Comp = 3'b000;
+parameter I_Type_Comp = 3'b001;
+parameter I_Type_Mem = 3'b010;
+parameter I_Type_Jump = 3'b011;
+parameter S_Type_Mem = 3'b100;
+parameter B_Type_Jump = 3'b101;
+parameter U_Type_Const = 3'b110;
+parameter J_Type_Jump = 3'b111;
 
 parameter ADD  = 4'b0000;
 parameter SUB  = 4'b0001;
@@ -38,8 +39,8 @@ parameter UC = 3'b100;
 //--Controller's Combinational Logic--//
 always @(*)
 begin
-	case(type)
-		R_type: 
+	case(funct)
+		R_Type_Comp: 
 		begin  
 		    sel_A   = 1'd0;
             sel_B   = 1'd0;
@@ -50,7 +51,7 @@ begin
 			br_type = NB;
 		end
 		
-		I_type: 
+		I_Type_Comp: 
 		begin 
 		   sel_A   = 1'd0;
            sel_B   = 1'd1;
@@ -61,7 +62,7 @@ begin
            br_type = NB;
 		end
 		
-		L_type: 
+		I_Type_Mem: 
         begin 
            sel_A  = 1'd0;
            sel_B  = 1'd1;
@@ -69,11 +70,23 @@ begin
            mem_wr = 1'd0;
            rf_wr  = 1'd1;
            wb_sel = 2'd1;
-           br_type = NB;
            alu_op = ADD;
+           br_type = NB;
+        end
+        
+        I_Type_Jump: 
+        begin 
+           sel_A  = 1'd0;
+           sel_B  = 1'd1;
+           mem_rd = 1'd0;
+           mem_wr = 1'd0;
+           rf_wr  = 1'd1;
+           wb_sel = 2'd2;
+           alu_op = ADD;
+           br_type = UC;
         end
 		
-		S_type: 
+		S_Type_Mem: 
 		begin 
 		   sel_A   = 1'd0;
            sel_B   = 1'd1;
@@ -81,11 +94,11 @@ begin
            mem_wr = 1'd1;
            rf_wr  = 1'd0;
            wb_sel = 2'd0;
-           br_type = NB;
            alu_op = ADD;
+           br_type = NB;
 		end
 		
-		B_type: 
+		B_Type_Jump: 
 		begin 
 		   sel_A  = 1'd1;
            sel_B  = 1'd1;
@@ -101,7 +114,7 @@ begin
            endcase
 		end
 		
-		U_type: 
+		U_Type_Const: 
 		begin 
 		   sel_A  = 1'd0;
            sel_B  = 1'd1;
@@ -109,11 +122,11 @@ begin
            mem_wr = 1'd0;
            rf_wr  = 1'd1;
            wb_sel = 2'd0;
+           alu_op = NULL;
            br_type = NB;
-           alu_op = ADD;
 		end
 		
-		J_type: 
+		J_Type_Jump: 
 		begin 
 		   sel_A  = 1'd1;
            sel_B  = 1'd1;
@@ -121,8 +134,8 @@ begin
            mem_wr = 1'd0;
            rf_wr  = 1'd1;
            wb_sel = 2'd2;
-           br_type = UC;
            alu_op = ADD;
+           br_type = UC;
 		end
 		
 		default:
@@ -133,6 +146,7 @@ begin
           mem_wr = 1'd0;
           rf_wr  = 1'd0;
           wb_sel = 2'd0;
+          alu_op = NULL;
           br_type = NB;
 		end
 	endcase 
@@ -140,15 +154,22 @@ end
 
 always @(*) 
 begin
-    if( type == R_type || type == I_type )
+    if( funct == R_Type_Comp || funct == I_Type_Comp )
     begin 
         case(funct3)
             3'b000: 
             begin
-                 case(funct7)
-                     7'b0000000: alu_op = ADD;
-                     7'b0100000: alu_op = SUB;
-                 endcase
+                if( funct == R_Type_Comp )
+                begin
+                     case(funct7)
+                         7'b0000000: alu_op = ADD;
+                         7'b0100000: alu_op = SUB;
+                     endcase
+                end
+                else
+                begin
+                    alu_op = ADD;
+                end
             end
             3'b001: alu_op = SLL;
             3'b010: alu_op = SLT; 
@@ -156,10 +177,17 @@ begin
             3'b100: alu_op = XOR;
             3'b101: 
             begin
-                 case(funct7)
-                     7'b0000000: alu_op = SRL;
-                     7'b0100000: alu_op = SRA;
-                 endcase
+                if( funct == R_Type_Comp )
+                begin
+                     case(funct7)
+                         7'b0000000: alu_op = SRL;
+                         7'b0100000: alu_op = SRA;
+                     endcase
+                end
+                else
+                begin
+                    alu_op = SRL;
+                end
             end
             3'b110: alu_op = OR;
             3'b111: alu_op = AND;

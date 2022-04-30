@@ -2,8 +2,8 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Fri Apr 29 10:13:07 2022
-# Process ID: 11984
+# Start of session at: Sat Apr 30 19:33:00 2022
+# Process ID: 6652
 # Current directory: C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.runs/synth_1
 # Command line: vivado.exe -log Test.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Test.tcl
 # Log file: C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.runs/synth_1/Test.vds
@@ -15,30 +15,39 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 10480 
+INFO: Helper process launched with PID 10716 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 408.367 ; gain = 96.188
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 409.379 ; gain = 96.309
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'Test' [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/new/Test.v:23]
 INFO: [Synth 8-6157] synthesizing module 'Processor' [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Processor.v:7]
 INFO: [Synth 8-6157] synthesizing module 'DataPath' [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/DataPath.v:4]
-INFO: [Synth 8-6157] synthesizing module 'ProgramCounter' [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/ProgramCounter.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'ProgramCounter' (1#1) [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/ProgramCounter.v:3]
 INFO: [Synth 8-6157] synthesizing module 'Mux2x1' [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Multiplexers.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'Mux2x1' (2#1) [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Multiplexers.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Mux2x1' (1#1) [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Multiplexers.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ProgramCounter' [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/ProgramCounter.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ProgramCounter' (2#1) [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/ProgramCounter.v:3]
 INFO: [Synth 8-6157] synthesizing module 'InstructionMemory' [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/InstructionMemory.v:3]
 INFO: [Synth 8-3876] $readmem data file 'InstructionMem.mem' is read successfully [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/InstructionMemory.v:13]
 INFO: [Synth 8-6155] done synthesizing module 'InstructionMemory' (3#1) [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/InstructionMemory.v:3]
 INFO: [Synth 8-6157] synthesizing module 'Decoder' [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Decoder.v:3]
-	Parameter R_type bound to: 3'b000 
-	Parameter I_type bound to: 3'b001 
-	Parameter L_type bound to: 3'b010 
-	Parameter S_type bound to: 3'b011 
-	Parameter B_type bound to: 3'b100 
-	Parameter U_type bound to: 3'b101 
-	Parameter J_type bound to: 3'b110 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Decoder.v:28]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Decoder.v:41]
+	Parameter R_Type bound to: 3'b000 
+	Parameter I_Type bound to: 3'b001 
+	Parameter L_Type bound to: 3'b010 
+	Parameter S_Type bound to: 3'b011 
+	Parameter B_Type bound to: 3'b100 
+	Parameter U_Type bound to: 3'b101 
+	Parameter J_Type bound to: 3'b110 
+	Parameter R_Type_Comp bound to: 3'b000 
+	Parameter I_Type_Comp bound to: 3'b001 
+	Parameter I_Type_Mem bound to: 3'b010 
+	Parameter I_Type_Jump bound to: 3'b011 
+	Parameter S_Type_Mem bound to: 3'b100 
+	Parameter B_Type_Jump bound to: 3'b101 
+	Parameter U_Type_Const bound to: 3'b110 
+	Parameter J_Type_Jump bound to: 3'b111 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Decoder.v:38]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Decoder.v:69]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Decoder.v:52]
 INFO: [Synth 8-6155] done synthesizing module 'Decoder' (4#1) [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Decoder.v:3]
 INFO: [Synth 8-6157] synthesizing module 'BranchCondition' [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/new/BranchCondition.v:3]
 	Parameter NB bound to: 3'b000 
@@ -51,7 +60,8 @@ INFO: [Synth 8-6157] synthesizing module 'RegisterFile' [C:/Users/Hamza/Desktop/
 INFO: [Synth 8-3876] $readmem data file 'RegisterMem.mem' is read successfully [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/RegisterFile.v:13]
 INFO: [Synth 8-6155] done synthesizing module 'RegisterFile' (6#1) [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/RegisterFile.v:3]
 INFO: [Synth 8-6157] synthesizing module 'DataMemory' [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/DataMemory.v:3]
-WARNING: [Synth 8-2898] ignoring malformed $readmem task: invalid memory name [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/DataMemory.v:19]
+INFO: [Synth 8-3876] $readmem data file 'DataMem.mem' is read successfully [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/DataMemory.v:19]
+WARNING: [Synth 8-3848] Net pin in module/entity DataMemory does not have driver. [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/DataMemory.v:8]
 INFO: [Synth 8-6155] done synthesizing module 'DataMemory' (7#1) [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/DataMemory.v:3]
 INFO: [Synth 8-6157] synthesizing module 'Mux4x1' [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Multiplexers.v:17]
 INFO: [Synth 8-6155] done synthesizing module 'Mux4x1' (8#1) [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Multiplexers.v:17]
@@ -71,13 +81,14 @@ INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Hamz
 INFO: [Synth 8-6155] done synthesizing module 'ArithmeticLogicUnit' (9#1) [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/ALU.v:3]
 INFO: [Synth 8-6155] done synthesizing module 'DataPath' (10#1) [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/DataPath.v:4]
 INFO: [Synth 8-6157] synthesizing module 'Controller' [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Controller.v:3]
-	Parameter R_type bound to: 3'b000 
-	Parameter I_type bound to: 3'b001 
-	Parameter L_type bound to: 3'b010 
-	Parameter S_type bound to: 3'b011 
-	Parameter B_type bound to: 3'b100 
-	Parameter U_type bound to: 3'b101 
-	Parameter J_type bound to: 3'b110 
+	Parameter R_Type_Comp bound to: 3'b000 
+	Parameter I_Type_Comp bound to: 3'b001 
+	Parameter I_Type_Mem bound to: 3'b010 
+	Parameter I_Type_Jump bound to: 3'b011 
+	Parameter S_Type_Mem bound to: 3'b100 
+	Parameter B_Type_Jump bound to: 3'b101 
+	Parameter U_Type_Const bound to: 3'b110 
+	Parameter J_Type_Jump bound to: 3'b111 
 	Parameter ADD bound to: 4'b0000 
 	Parameter SUB bound to: 4'b0001 
 	Parameter SLL bound to: 4'b0010 
@@ -94,10 +105,10 @@ INFO: [Synth 8-6157] synthesizing module 'Controller' [C:/Users/Hamza/Desktop/ri
 	Parameter BNE bound to: 3'b010 
 	Parameter BLT bound to: 3'b011 
 	Parameter UC bound to: 3'b100 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Controller.v:97]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Controller.v:41]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Controller.v:137]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Controller.v:148]
+INFO: [Synth 8-226] default block is never used [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Controller.v:42]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Controller.v:110]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Controller.v:164]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Controller.v:182]
 INFO: [Synth 8-6155] done synthesizing module 'Controller' (11#1) [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Controller.v:3]
 INFO: [Synth 8-6155] done synthesizing module 'Processor' (12#1) [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Processor.v:7]
 WARNING: [Synth 8-689] width (1) of port connection 'pin' does not match port width (32) of module 'Processor' [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/new/Test.v:31]
@@ -117,8 +128,68 @@ INFO: [Synth 8-6155] done synthesizing module 'seven_seg' (18#1) [C:/Users/Hamza
 WARNING: [Synth 8-689] width (1) of port connection 'data' does not match port width (32) of module 'seven_seg' [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/new/Test.v:32]
 INFO: [Synth 8-6155] done synthesizing module 'Test' (19#1) [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/new/Test.v:23]
 WARNING: [Synth 8-3331] design seven_seg has unconnected port reset
+WARNING: [Synth 8-3331] design DataMemory has unconnected port pin[31]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port pin[30]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port pin[29]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port pin[28]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port pin[27]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port pin[26]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port pin[25]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port pin[24]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port pin[23]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port pin[22]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port pin[21]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port pin[20]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port pin[19]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port pin[18]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port pin[17]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port pin[16]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port pin[15]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port pin[14]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port pin[13]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port pin[12]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port pin[11]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port pin[10]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port pin[9]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port pin[8]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port pin[7]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port pin[6]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port pin[5]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port pin[4]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port pin[3]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port pin[2]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port pin[1]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port pin[0]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port addr[31]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port addr[30]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port addr[29]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port addr[28]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port addr[27]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port addr[26]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port addr[25]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port addr[24]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port addr[23]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port addr[22]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port addr[21]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port addr[20]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port addr[19]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port addr[18]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port addr[17]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port addr[16]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port addr[15]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port addr[14]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port addr[13]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port addr[12]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port addr[11]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port addr[10]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port addr[9]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port addr[8]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port addr[7]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port addr[6]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port addr[5]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port addr[4]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 464.574 ; gain = 152.395
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 464.016 ; gain = 150.945
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -131,10 +202,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 464.574 ; gain = 152.395
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 464.016 ; gain = 150.945
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 464.574 ; gain = 152.395
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 464.016 ; gain = 150.945
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -246,148 +317,43 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 830.785 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 806.555 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 830.785 ; gain = 518.605
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 806.555 ; gain = 493.484
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 830.785 ; gain = 518.605
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 806.555 ; gain = 493.484
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 830.785 ; gain = 518.605
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 806.555 ; gain = 493.484
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "type" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5545] ROM "data_mem_reg[127]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[126]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[125]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[124]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[123]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[122]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[121]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[120]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[119]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[118]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[117]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[116]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[115]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[114]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[113]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[112]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[111]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[110]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[109]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[108]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[107]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[106]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[105]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[104]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[103]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[102]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[101]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[100]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[99]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[98]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[97]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[96]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[95]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[94]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[93]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[92]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[91]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[90]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[89]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[88]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[87]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[86]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[85]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[84]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[83]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[82]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[81]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[80]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[79]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[78]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[77]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[76]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[75]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[74]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[73]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[72]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[71]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[70]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[69]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[68]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[67]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[66]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[65]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[64]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[63]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[62]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[61]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[60]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[59]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[58]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[57]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[56]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[55]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[54]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[53]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[52]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[51]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[50]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[49]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[48]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[47]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[46]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[45]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[44]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[43]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[42]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[41]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[40]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[39]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[38]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[37]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[36]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[35]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[34]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[33]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[32]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[31]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[30]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[29]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "data_mem_reg[28]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Common 17-14] Message 'Synth 8-5545' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5546] ROM "funct" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/ALU.v:23]
 INFO: [Synth 8-5544] ROM "br_type" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "alu_op" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-327] inferring latch for variable 'funct3_reg' [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Decoder.v:44]
-WARNING: [Synth 8-327] inferring latch for variable 'type_reg' [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Decoder.v:29]
-WARNING: [Synth 8-327] inferring latch for variable 'rs1_reg' [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Decoder.v:46]
-WARNING: [Synth 8-327] inferring latch for variable 'rs2_reg' [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Decoder.v:47]
-WARNING: [Synth 8-327] inferring latch for variable 'rd_reg' [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Decoder.v:48]
-WARNING: [Synth 8-327] inferring latch for variable 'funct7_reg' [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Decoder.v:45]
-WARNING: [Synth 8-327] inferring latch for variable 'imm_reg' [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Decoder.v:56]
+WARNING: [Synth 8-327] inferring latch for variable 'funct3_reg' [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Decoder.v:55]
+WARNING: [Synth 8-327] inferring latch for variable 'funct_reg' [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Decoder.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'rs1_reg' [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Decoder.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'rs2_reg' [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Decoder.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'rd_reg' [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Decoder.v:59]
+WARNING: [Synth 8-327] inferring latch for variable 'funct7_reg' [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Decoder.v:56]
+WARNING: [Synth 8-327] inferring latch for variable 'imm_reg' [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Decoder.v:68]
+WARNING: [Synth 8-327] inferring latch for variable 'type_reg' [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Decoder.v:39]
 WARNING: [Synth 8-327] inferring latch for variable 'rdata_reg' [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/DataMemory.v:32]
 WARNING: [Synth 8-327] inferring latch for variable 'ALUresult_reg' [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/ALU.v:24]
-WARNING: [Synth 8-327] inferring latch for variable 'sel_A_reg' [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Controller.v:44]
-WARNING: [Synth 8-327] inferring latch for variable 'sel_B_reg' [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Controller.v:45]
-WARNING: [Synth 8-327] inferring latch for variable 'rf_wr_reg' [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Controller.v:48]
-WARNING: [Synth 8-327] inferring latch for variable 'mem_rd_reg' [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Controller.v:46]
-WARNING: [Synth 8-327] inferring latch for variable 'mem_wr_reg' [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Controller.v:47]
-WARNING: [Synth 8-327] inferring latch for variable 'wb_sel_reg' [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Controller.v:49]
-WARNING: [Synth 8-327] inferring latch for variable 'br_type_reg' [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Controller.v:50]
-WARNING: [Synth 8-327] inferring latch for variable 'alu_op_reg' [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Controller.v:138]
+WARNING: [Synth 8-327] inferring latch for variable 'br_type_reg' [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Controller.v:51]
+WARNING: [Synth 8-327] inferring latch for variable 'alu_op_reg' [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Controller.v:165]
 WARNING: [Synth 8-327] inferring latch for variable 'alu_op_reg' [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Controller.v:73]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 830.785 ; gain = 518.605
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 806.555 ; gain = 493.484
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -407,7 +373,7 @@ Detailed RTL Component Info :
 +---XORs : 
 	   2 Input     32 Bit         XORs := 1     
 +---Registers : 
-	               32 Bit    Registers := 128   
+	               32 Bit    Registers := 1     
 	                3 Bit    Registers := 1     
 	                1 Bit    Registers := 1     
 +---Muxes : 
@@ -415,15 +381,21 @@ Detailed RTL Component Info :
 	   4 Input     32 Bit        Muxes := 1     
 	  12 Input     32 Bit        Muxes := 1     
 	   8 Input      8 Bit        Muxes := 1     
-	  10 Input      4 Bit        Muxes := 1     
-	   8 Input      3 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 1     
+	  10 Input      3 Bit        Muxes := 1     
+	   9 Input      3 Bit        Muxes := 1     
 	  11 Input      3 Bit        Muxes := 1     
 	   8 Input      2 Bit        Muxes := 1     
-	   8 Input      1 Bit        Muxes := 13    
-	   2 Input      1 Bit        Muxes := 132   
+	   7 Input      1 Bit        Muxes := 5     
+	  10 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
 	  12 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 7     
 	  11 Input      1 Bit        Muxes := 1     
-	   3 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -435,6 +407,10 @@ Module Mux2x1
 Detailed RTL Component Info : 
 +---Muxes : 
 	   2 Input     32 Bit        Muxes := 1     
+Module ProgramCounter 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
 Module InstructionMemory 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -442,18 +418,15 @@ Detailed RTL Component Info :
 Module Decoder 
 Detailed RTL Component Info : 
 +---Muxes : 
-	   8 Input      3 Bit        Muxes := 2     
-	   8 Input      1 Bit        Muxes := 5     
+	  10 Input      3 Bit        Muxes := 1     
+	   9 Input      3 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 5     
+	  10 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 1     
 Module BranchCondition 
 Detailed RTL Component Info : 
 +---Muxes : 
 	   2 Input      1 Bit        Muxes := 3     
-Module DataMemory 
-Detailed RTL Component Info : 
-+---Registers : 
-	               32 Bit    Registers := 128   
-+---Muxes : 
-	   2 Input      1 Bit        Muxes := 128   
 Module Mux4x1 
 Detailed RTL Component Info : 
 +---Muxes : 
@@ -474,13 +447,14 @@ Detailed RTL Component Info :
 Module Controller 
 Detailed RTL Component Info : 
 +---Muxes : 
-	  10 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 1     
 	  11 Input      3 Bit        Muxes := 1     
 	   8 Input      2 Bit        Muxes := 1     
-	   8 Input      1 Bit        Muxes := 8     
+	   8 Input      1 Bit        Muxes := 7     
 	  11 Input      1 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 1     
-	   3 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
 Module freq_div 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -537,9 +511,124 @@ WARNING: [Synth 8-3331] design InstructionMemory has unconnected port insAddr[10
 WARNING: [Synth 8-3331] design InstructionMemory has unconnected port insAddr[9]
 WARNING: [Synth 8-3331] design InstructionMemory has unconnected port insAddr[8]
 WARNING: [Synth 8-3331] design InstructionMemory has unconnected port insAddr[7]
-INFO: [Synth 8-3886] merging instance 'CPU/CTRL/mem_rd_reg' (LD) to 'CPU/CTRL/wb_sel_reg[0]'
+WARNING: [Synth 8-3331] design DataPath has unconnected port pin[31]
+WARNING: [Synth 8-3331] design DataPath has unconnected port pin[30]
+WARNING: [Synth 8-3331] design DataPath has unconnected port pin[29]
+WARNING: [Synth 8-3331] design DataPath has unconnected port pin[28]
+WARNING: [Synth 8-3331] design DataPath has unconnected port pin[27]
+WARNING: [Synth 8-3331] design DataPath has unconnected port pin[26]
+WARNING: [Synth 8-3331] design DataPath has unconnected port pin[25]
+WARNING: [Synth 8-3331] design DataPath has unconnected port pin[24]
+WARNING: [Synth 8-3331] design DataPath has unconnected port pin[23]
+WARNING: [Synth 8-3331] design DataPath has unconnected port pin[22]
+WARNING: [Synth 8-3331] design DataPath has unconnected port pin[21]
+WARNING: [Synth 8-3331] design DataPath has unconnected port pin[20]
+WARNING: [Synth 8-3331] design DataPath has unconnected port pin[19]
+WARNING: [Synth 8-3331] design DataPath has unconnected port pin[18]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DC/funct3_reg[2]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DC/funct3_reg[1]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DC/funct3_reg[0]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DC/funct_reg[2]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DC/funct_reg[1]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DC/funct_reg[0]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DC/rs1_reg[4]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DC/rs1_reg[3]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DC/rs1_reg[2]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DC/rs1_reg[1]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DC/rs1_reg[0]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DC/rs2_reg[4]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DC/rs2_reg[3]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DC/rs2_reg[2]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DC/rs2_reg[1]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DC/rs2_reg[0]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DC/rd_reg[4]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DC/rd_reg[3]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DC/rd_reg[2]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DC/rd_reg[1]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DC/rd_reg[0]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DC/funct7_reg[6]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DC/funct7_reg[5]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DC/funct7_reg[4]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DC/funct7_reg[3]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DC/funct7_reg[2]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DC/funct7_reg[1]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DC/funct7_reg[0]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DC/imm_reg[31]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DC/imm_reg[30]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DC/imm_reg[29]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DC/imm_reg[28]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DC/imm_reg[27]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DC/imm_reg[26]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DC/imm_reg[25]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DC/imm_reg[24]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DC/imm_reg[23]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DC/imm_reg[22]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DC/imm_reg[21]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DC/imm_reg[20]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DC/imm_reg[19]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DC/imm_reg[18]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DC/imm_reg[17]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DC/imm_reg[16]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DC/imm_reg[15]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DC/imm_reg[14]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DC/imm_reg[13]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DC/imm_reg[12]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DC/imm_reg[11]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DC/imm_reg[10]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DC/imm_reg[9]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DC/imm_reg[8]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DC/imm_reg[7]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DC/imm_reg[6]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DC/imm_reg[5]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DC/imm_reg[4]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DC/imm_reg[3]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DC/imm_reg[2]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DC/imm_reg[1]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DC/imm_reg[0]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DC/type_reg[2]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DC/type_reg[1]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DC/type_reg[0]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DM/rdata_reg[31]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DM/rdata_reg[30]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DM/rdata_reg[29]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DM/rdata_reg[28]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DM/rdata_reg[27]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DM/rdata_reg[26]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DM/rdata_reg[25]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DM/rdata_reg[24]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DM/rdata_reg[23]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DM/rdata_reg[22]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DM/rdata_reg[21]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DM/rdata_reg[20]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DM/rdata_reg[19]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DM/rdata_reg[18]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DM/rdata_reg[17]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DM/rdata_reg[16]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DM/rdata_reg[15]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DM/rdata_reg[14]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DM/rdata_reg[13]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DM/rdata_reg[12]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DM/rdata_reg[11]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DM/rdata_reg[10]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DM/rdata_reg[9]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DM/rdata_reg[8]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DM/rdata_reg[7]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DM/rdata_reg[6]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DM/rdata_reg[5]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DM/rdata_reg[4]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DM/rdata_reg[3]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DM/rdata_reg[2]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DM/rdata_reg[1]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/DM/rdata_reg[0]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/ALU/ALUresult_reg[31]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/ALU/ALUresult_reg[30]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/ALU/ALUresult_reg[29]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/ALU/ALUresult_reg[28]) is unused and will be removed from module Test.
+WARNING: [Synth 8-3332] Sequential element (CPU/DP/ALU/ALUresult_reg[27]) is unused and will be removed from module Test.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 830.785 ; gain = 518.605
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 806.555 ; gain = 493.484
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -559,15 +648,6 @@ ROM:
 |InstructionMemory | p_0_out    | 128x8         | LUT            | 
 +------------------+------------+---------------+----------------+
 
-
-Distributed RAM: Preliminary Mapping  Report (see note below)
-+------------+---------------------+-----------+----------------------+---------------+
-|Module Name | RTL Object          | Inference | Size (Depth x Width) | Primitives    | 
-+------------+---------------------+-----------+----------------------+---------------+
-|\CPU/DP     | RF/register_mem_reg | Implied   | 32 x 32              | RAM32M x 12   | 
-+------------+---------------------+-----------+----------------------+---------------+
-
-Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
@@ -581,27 +661,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 830.785 ; gain = 518.605
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 809.832 ; gain = 496.762
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 830.785 ; gain = 518.605
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start ROM, RAM, DSP and Shift Register Reporting
----------------------------------------------------------------------------------
-
-Distributed RAM: Final Mapping  Report
-+------------+---------------------+-----------+----------------------+---------------+
-|Module Name | RTL Object          | Inference | Size (Depth x Width) | Primitives    | 
-+------------+---------------------+-----------+----------------------+---------------+
-|\CPU/DP     | RF/register_mem_reg | Implied   | 32 x 32              | RAM32M x 12   | 
-+------------+---------------------+-----------+----------------------+---------------+
-
----------------------------------------------------------------------------------
-Finished ROM, RAM, DSP and Shift Register Reporting
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 809.832 ; gain = 496.762
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -613,7 +679,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:44 ; elapsed = 00:00:48 . Memory (MB): peak = 868.148 ; gain = 555.969
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 819.391 ; gain = 506.320
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -637,28 +703,20 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:46 ; elapsed = 00:00:50 . Memory (MB): peak = 868.148 ; gain = 555.969
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 819.391 ; gain = 506.320
 ---------------------------------------------------------------------------------
-CRITICAL WARNING: [Synth 8-3352] multi-driven net CPU/alu_op[1] with 1st driver pin 'CPU/CTRL/alu_op_reg[1]/Q' [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Controller.v:138]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net CPU/alu_op[1] with 2nd driver pin 'CPU/CTRL/alu_op_reg[1]__0/Q' [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Controller.v:73]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net CPU/alu_op[3] with 1st driver pin 'CPU/CTRL/alu_op_reg[3]/Q' [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Controller.v:138]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net CPU/alu_op[3] with 2nd driver pin 'CPU/CTRL/alu_op_reg[3]__0/Q' [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Controller.v:73]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net CPU/alu_op[0] with 1st driver pin 'CPU/CTRL/alu_op_reg[0]/Q' [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Controller.v:138]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net CPU/alu_op[0] with 2nd driver pin 'CPU/CTRL/alu_op_reg[0]__0/Q' [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Controller.v:73]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net CPU/alu_op[2] with 1st driver pin 'CPU/CTRL/alu_op_reg[2]/Q' [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Controller.v:138]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net CPU/alu_op[2] with 2nd driver pin 'CPU/CTRL/alu_op_reg[2]__0/Q' [C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.srcs/sources_1/imports/DesignCode/Controller.v:73]
 
 Report Check Netlist: 
 +------+------------------+-------+---------+-------+------------------+
 |      |Item              |Errors |Warnings |Status |Description       |
 +------+------------------+-------+---------+-------+------------------+
-|1     |multi_driven_nets |      0|        4|Failed |Multi driven nets |
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:46 ; elapsed = 00:00:50 . Memory (MB): peak = 868.148 ; gain = 555.969
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 819.391 ; gain = 506.320
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -670,25 +728,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:46 ; elapsed = 00:00:51 . Memory (MB): peak = 868.148 ; gain = 555.969
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 819.391 ; gain = 506.320
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:47 ; elapsed = 00:00:51 . Memory (MB): peak = 868.148 ; gain = 555.969
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 819.391 ; gain = 506.320
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:47 ; elapsed = 00:00:51 . Memory (MB): peak = 868.148 ; gain = 555.969
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 819.391 ; gain = 506.320
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:47 ; elapsed = 00:00:51 . Memory (MB): peak = 868.148 ; gain = 555.969
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 819.391 ; gain = 506.320
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -704,75 +762,46 @@ Report Cell Usage:
 +------+-------+------+
 |      |Cell   |Count |
 +------+-------+------+
-|1     |BUFG   |     4|
-|2     |CARRY4 |    47|
-|3     |LUT1   |     3|
-|4     |LUT2   |    54|
-|5     |LUT3   |   150|
-|6     |LUT4   |   108|
-|7     |LUT5   |   210|
-|8     |LUT6   |  1567|
-|9     |MUXF7  |   559|
-|10    |MUXF8  |   256|
-|11    |RAM32M |    12|
-|12    |FDCE   |    32|
-|13    |FDRE   |  4118|
-|14    |LD     |   144|
-|15    |LDC    |     2|
-|16    |LDP    |     2|
-|17    |IBUF   |     2|
-|18    |OBUF   |    15|
+|1     |BUFG   |     1|
+|2     |CARRY4 |     5|
+|3     |LUT1   |     2|
+|4     |LUT2   |     1|
+|5     |LUT3   |     9|
+|6     |FDRE   |    22|
+|7     |IBUF   |     1|
+|8     |OBUF   |    15|
 +------+-------+------+
 
 Report Instance Areas: 
-+------+-------------------+--------------------+------+
-|      |Instance           |Module              |Cells |
-+------+-------------------+--------------------+------+
-|1     |top                |                    |  7285|
-|2     |  CPU              |Processor           |  7223|
-|3     |    CTRL           |Controller          |    18|
-|4     |    DP             |DataPath            |  7145|
-|5     |      IM           |InstructionMemory   |    26|
-|6     |      ALU          |ArithmeticLogicUnit |   301|
-|7     |      DC           |Decoder             |   342|
-|8     |      DM           |DataMemory          |  6016|
-|9     |      MX1          |Mux2x1              |    31|
-|10    |      MX2          |Mux2x1_0            |    36|
-|11    |      MX3          |Mux2x1_1            |    32|
-|12    |      MX4          |Mux4x1              |    32|
-|13    |      PC           |ProgramCounter      |   305|
-|14    |      RF           |RegisterFile        |    15|
-|15    |  SVG              |seven_seg           |    40|
-|16    |    mo8            |mux_out             |     1|
-|17    |    nolabel_line40 |seven_seg_anode     |     8|
-|18    |    fq             |freq_div            |    25|
-|19    |    scount         |segment_counter     |     6|
-+------+-------------------+--------------------+------+
++------+-------------------+----------------+------+
+|      |Instance           |Module          |Cells |
++------+-------------------+----------------+------+
+|1     |top                |                |    56|
+|2     |  SVG              |seven_seg       |    39|
+|3     |    fq             |freq_div        |    25|
+|4     |    nolabel_line40 |seven_seg_anode |     8|
+|5     |    scount         |segment_counter |     6|
++------+-------------------+----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:47 ; elapsed = 00:00:51 . Memory (MB): peak = 868.148 ; gain = 555.969
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 819.391 ; gain = 506.320
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 8 critical warnings and 43 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:33 ; elapsed = 00:00:41 . Memory (MB): peak = 868.148 ; gain = 189.758
-Synthesis Optimization Complete : Time (s): cpu = 00:00:47 ; elapsed = 00:00:52 . Memory (MB): peak = 868.148 ; gain = 555.969
+Synthesis finished with 0 errors, 0 critical warnings and 240 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 819.391 ; gain = 163.781
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 819.391 ; gain = 506.320
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 1024 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-WARNING: [Netlist 29-101] Netlist 'Test' is not ideal for floorplanning, since the cellview 'DataMemory' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 160 instances were transformed.
-  LD => LDCE: 144 instances
-  LDC => LDCE: 2 instances
-  LDP => LDPE: 2 instances
-  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances
+No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-167 Infos, 80 Warnings, 40 Critical Warnings and 0 Errors encountered.
+70 Infos, 248 Warnings, 32 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:51 ; elapsed = 00:00:56 . Memory (MB): peak = 868.148 ; gain = 568.820
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 830.945 ; gain = 530.566
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.runs/synth_1/Test.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Test_utilization_synth.rpt -pb Test_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.132 . Memory (MB): peak = 868.148 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Fri Apr 29 10:14:11 2022...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 830.945 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 30 19:33:42 2022...

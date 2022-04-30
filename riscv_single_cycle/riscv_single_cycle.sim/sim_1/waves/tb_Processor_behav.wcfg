@@ -12,14 +12,14 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="179400001fs"></ZoomEndTime>
-      <Cursor1Time time="53200000fs"></Cursor1Time>
+      <ZoomEndTime time="180200001fs"></ZoomEndTime>
+      <Cursor1Time time="85000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="180"></NameColumnWidth>
-      <ValueColumnWidth column_width="245"></ValueColumnWidth>
+      <ValueColumnWidth column_width="241"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="32" />
+   <WVObjectSize size="29" />
    <wvobject fp_name="/tb_Processor/rst" type="logic">
       <obj_property name="ElementShortName">rst</obj_property>
       <obj_property name="ObjectShortName">rst</obj_property>
@@ -32,11 +32,7 @@
    <wvobject fp_name="/tb_Processor/UUT/DP/instruction" type="array">
       <obj_property name="ElementShortName">instruction[31:0]</obj_property>
       <obj_property name="ObjectShortName">instruction[31:0]</obj_property>
-      <obj_property name="Radix">BINARYRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_Processor/UUT/DP/PC/pc_out" type="array">
-      <obj_property name="ElementShortName">pc_out[31:0]</obj_property>
-      <obj_property name="ObjectShortName">pc_out[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_Processor/UUT/DP/PC/pc_in" type="array">
       <obj_property name="ElementShortName">pc_in[31:0]</obj_property>
@@ -48,10 +44,6 @@
       <obj_property name="ObjectShortName">pc_out[31:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_Processor/UUT/CTRL/type" type="array">
-      <obj_property name="ElementShortName">type[2:0]</obj_property>
-      <obj_property name="ObjectShortName">type[2:0]</obj_property>
-   </wvobject>
    <wvobject fp_name="/tb_Processor/UUT/DP/DM/rdata" type="array">
       <obj_property name="ElementShortName">rdata[31:0]</obj_property>
       <obj_property name="ObjectShortName">rdata[31:0]</obj_property>
@@ -59,26 +51,22 @@
    <wvobject fp_name="/tb_Processor/UUT/DP/ALU/operand_1" type="array">
       <obj_property name="ElementShortName">operand_1[31:0]</obj_property>
       <obj_property name="ObjectShortName">operand_1[31:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_Processor/UUT/DP/ALU/operand_2" type="array">
       <obj_property name="ElementShortName">operand_2[31:0]</obj_property>
       <obj_property name="ObjectShortName">operand_2[31:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_Processor/UUT/DP/ALU/ALUresult" type="array">
       <obj_property name="ElementShortName">ALUresult[31:0]</obj_property>
       <obj_property name="ObjectShortName">ALUresult[31:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_Processor/UUT/DP/ALU/ALUop" type="array">
       <obj_property name="ElementShortName">ALUop[3:0]</obj_property>
       <obj_property name="ObjectShortName">ALUop[3:0]</obj_property>
       <obj_property name="Radix">BINARYRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_Processor/UUT/CTRL/type" type="array">
-      <obj_property name="ElementShortName">type[2:0]</obj_property>
-      <obj_property name="ObjectShortName">type[2:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_Processor/UUT/DP/br_taken" type="logic">
       <obj_property name="ElementShortName">br_taken</obj_property>
