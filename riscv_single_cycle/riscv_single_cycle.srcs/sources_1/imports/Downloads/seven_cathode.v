@@ -1,11 +1,14 @@
-module seven_cathode(data,cathode);
-    input [3:0] data;
-    output reg [6:0] cathode;
+module Seg_Cathode(
+    input [3:0] data,
+    output reg [6:0] cathode
+);
     
     initial
-    cathode=0;
-// Cathode patterns of the 7-segment 1 LED display 
-    always @(data)
+    begin
+        cathode=0;
+    end
+
+    always @(*)
     begin
         case(data)
         4'b0000: cathode <= 7'b0000001; // "0"     
@@ -27,6 +30,6 @@ module seven_cathode(data,cathode);
         
         default: cathode = 7'b1111111; // "-"
         endcase
-        end
+    end
 
 endmodule

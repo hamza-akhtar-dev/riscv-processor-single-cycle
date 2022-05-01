@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1651329176">
-  <File Type="PA-TCL" Name="Test.tcl"/>
-  <File Type="REPORTS-TCL" Name="Test_reports.tcl"/>
-  <File Type="RDS-RDS" Name="Test.vds"/>
-  <File Type="RDS-UTIL" Name="Test_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="Test_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="Test.dcp"/>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1651441657">
+  <File Type="PA-TCL" Name="CPU_FPGA.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="CPU_FPGA_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="CPU_FPGA_reports.tcl"/>
+  <File Type="RDS-RDS" Name="CPU_FPGA.vds"/>
+  <File Type="RDS-UTIL" Name="CPU_FPGA_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="CPU_FPGA_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="CPU_FPGA.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="CPU_FPGA_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="CPU_FPGA_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/DesignCode/ALU.v">
@@ -159,7 +162,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/Test.v">
+    <File Path="$PSRCDIR/sources_1/new/CPU_FPGA.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -168,7 +171,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="Test"/>
+      <Option Name="TopModule" Val="CPU_FPGA"/>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>

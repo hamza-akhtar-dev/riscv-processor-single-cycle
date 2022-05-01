@@ -53,6 +53,29 @@ begin
 			rf_wr  = 1'd1;
 			wb_sel = 2'd0;
 			br_type = NB;
+			alu_op = 4'd0;
+			case(funct3)
+                3'b000: 
+                begin
+                     case(funct7)
+                         7'b0000000: alu_op = ADD;
+                         7'b0100000: alu_op = SUB;
+                     endcase
+                end
+                3'b001: alu_op = SLL;
+                3'b010: alu_op = SLT; 
+                3'b011: alu_op = SLTU;
+                3'b100: alu_op = XOR;
+                3'b101: 
+                begin
+                    case(funct7)
+                        7'b0000000: alu_op = SRL;
+                        7'b0100000: alu_op = SRA;
+                    endcase
+                end
+                3'b110: alu_op = OR;
+                3'b111: alu_op = AND;
+            endcase
 		end
 		
 		I_Type_Comp: 
@@ -64,6 +87,17 @@ begin
            rf_wr  = 1'd1;
            wb_sel = 2'd0;
            br_type = NB;
+           alu_op = 4'd0;
+           case(funct3)
+               3'b000: alu_op = ADD;
+               3'b001: alu_op = SLL;
+               3'b010: alu_op = SLT; 
+               3'b011: alu_op = SLTU;
+               3'b100: alu_op = XOR;
+               3'b101: alu_op = SRL;
+               3'b110: alu_op = OR;
+               3'b111: alu_op = AND;
+           endcase
 		end
 		
 		I_Type_Mem: 
@@ -164,49 +198,6 @@ begin
           br_type = NB;
 		end
 	endcase 
-end
-
-always @(*) 
-begin
-    if( funct == R_Type_Comp || funct == I_Type_Comp )
-    begin 
-        case(funct3)
-            3'b000: 
-            begin
-                if( funct == R_Type_Comp )
-                begin
-                     case(funct7)
-                         7'b0000000: alu_op = ADD;
-                         7'b0100000: alu_op = SUB;
-                     endcase
-                end
-                else
-                begin
-                    alu_op = ADD;
-                end
-            end
-            3'b001: alu_op = SLL;
-            3'b010: alu_op = SLT; 
-            3'b011: alu_op = SLTU;
-            3'b100: alu_op = XOR;
-            3'b101: 
-            begin
-                if( funct == R_Type_Comp )
-                begin
-                     case(funct7)
-                         7'b0000000: alu_op = SRL;
-                         7'b0100000: alu_op = SRA;
-                     endcase
-                end
-                else
-                begin
-                    alu_op = SRL;
-                end
-            end
-            3'b110: alu_op = OR;
-            3'b111: alu_op = AND;
-        endcase
-    end
 end
 
 endmodule

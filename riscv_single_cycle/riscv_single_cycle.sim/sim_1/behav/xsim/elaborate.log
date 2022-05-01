@@ -1,7 +1,31 @@
 Vivado Simulator 2018.2
 Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto ffb195d5c08d4749b10a9d250a22231e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_Processor_behav xil_defaultlib.tb_Processor xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto ffb195d5c08d4749b10a9d250a22231e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_CPU_FPGA_behav xil_defaultlib.tb_CPU_FPGA xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Mux2x1
+Compiling module xil_defaultlib.ProgramCounter
+Compiling module xil_defaultlib.InstructionMemory
+Compiling module xil_defaultlib.Decoder
+Compiling module xil_defaultlib.BranchCondition
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.DataMemory
+Compiling module xil_defaultlib.Mux4x1
+Compiling module xil_defaultlib.ArithmeticLogicUnit
+Compiling module xil_defaultlib.DataPath
+Compiling module xil_defaultlib.Controller
+Compiling module xil_defaultlib.Processor
+Compiling module xil_defaultlib.Freq_Div
+Compiling module xil_defaultlib.Seg_Count
+Compiling module xil_defaultlib.Seg_Mux
+Compiling module xil_defaultlib.Seg_Anode
+Compiling module xil_defaultlib.Seg_Cathode
+Compiling module xil_defaultlib.Seven_Seg
+Compiling module xil_defaultlib.CPU_FPGA
+Compiling module xil_defaultlib.tb_CPU_FPGA
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_CPU_FPGA_behav

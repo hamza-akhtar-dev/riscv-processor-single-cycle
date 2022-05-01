@@ -18,6 +18,11 @@ parameter OR  = 4'b1000;
 parameter AND  = 4'b1001;
 parameter NULL  = 4'b1010;
 
+initial
+begin
+    
+end
+
 always@(*)
 begin
 	case(ALUop)

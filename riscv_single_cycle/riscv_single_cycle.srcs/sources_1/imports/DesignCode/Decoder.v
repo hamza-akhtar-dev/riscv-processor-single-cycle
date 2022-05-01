@@ -105,6 +105,17 @@ begin
             imm = $signed({instruction[31], instruction[19:12], instruction[20], instruction[30:21], 1'b0});
             funct = J_Type_Jump;
 		end
+		
+		default:
+		begin
+		      funct3 = 3'd0;
+		      funct7 = 7'd0;
+		      rs1 = 5'd0;
+		      rs2 = 5'd0;
+		      rd = 5'd0;
+		      imm = 32'd0;
+		      funct = 3'd0;
+		end
 	endcase 
 end
 

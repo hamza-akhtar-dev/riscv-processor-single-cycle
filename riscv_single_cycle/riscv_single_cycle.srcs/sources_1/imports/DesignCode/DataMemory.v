@@ -6,7 +6,7 @@ module DataMemory(
 	input [31:0] addr,
 	input [31:0] wdata,
 	output reg [31:0] rdata,
-	output wire [31:0] pin
+	output reg [31:0] tag
 );
 
 parameter Byte = 2'b00;
@@ -14,8 +14,6 @@ parameter HalfWord = 2'b01;
 parameter Word = 2'b10;
 
 reg [7:0] data_mem [40:0];
-
-//assign pin = data_mem[2][31:0];
 
 initial
 begin
@@ -69,5 +67,10 @@ begin
 	   endcase
 	end
 end  
+
+always@(*)
+begin
+    tag <= {data_mem[3], data_mem[2], data_mem[1], data_mem[0]};
+end
 
 endmodule

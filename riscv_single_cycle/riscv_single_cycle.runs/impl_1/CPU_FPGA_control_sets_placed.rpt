@@ -1,0 +1,124 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Mon May  2 03:11:54 2022
+| Host         : DESKTOP-9E4J9LU running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file CPU_FPGA_control_sets_placed.rpt
+| Design       : CPU_FPGA
+| Device       : xc7a100t
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    56 |
+| Unused register locations in slices containing registers |    28 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      6 |            4 |
+|      8 |            1 |
+|     10 |            2 |
+|     14 |            1 |
+|    16+ |           48 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             332 |           86 |
+| No           | No                    | Yes                    |              64 |           15 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |             656 |          205 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------------+-------------------------------------+------------------------------+------------------+----------------+
+|             Clock Signal            |            Enable Signal            |       Set/Reset Signal       | Slice Load Count | Bel Load Count |
++-------------------------------------+-------------------------------------+------------------------------+------------------+----------------+
+|  CPU/DP/PC/data_mem_reg[0][7]_10[0] |                                     |                              |                2 |              6 |
+|  CPU/DP/DC/funct_reg[2]_i_2_n_3     |                                     |                              |                1 |              6 |
+|  SVG/FDIV/div_clk_seg               |                                     |                              |                1 |              6 |
+|  CPU/DP/DC/pc_out_reg[31][0]        |                                     |                              |                1 |              6 |
+|  CPU/DP/DC/E[0]                     |                                     |                              |                1 |              8 |
+|  CPU/DP/DC/rd_reg[4]_i_2_n_3        |                                     |                              |                2 |             10 |
+|  CPU/DP/DC/rs2_reg[4]_i_2_n_3       |                                     |                              |                2 |             10 |
+|  CPU/DP/DC/funct7_reg[6]_i_2_n_3    |                                     |                              |                4 |             14 |
+|  CPU/DP/DC/funct3_reg[2]_i_2_n_3    |                                     |                              |                4 |             16 |
+|  clk_IBUF_BUFG                      | CPU/DP/ALU/data_mem_reg[23][7][0]   |                              |                6 |             16 |
+|  clk_IBUF_BUFG                      | CPU/DP/ALU/data_mem_reg[34][7][0]   |                              |                5 |             16 |
+|  clk_IBUF_BUFG                      | CPU/DP/ALU/data_mem_reg[38][7][0]   |                              |                5 |             16 |
+|  clk_IBUF_BUFG                      | CPU/DP/ALU/data_mem_reg[25][7][0]   |                              |                4 |             16 |
+|  clk_IBUF_BUFG                      | CPU/DP/ALU/data_mem_reg[28][7][0]   |                              |                8 |             16 |
+|  clk_IBUF_BUFG                      | CPU/DP/ALU/data_mem_reg[24][7]_0[0] |                              |                6 |             16 |
+|  clk_IBUF_BUFG                      | CPU/DP/ALU/data_mem_reg[27][7][0]   |                              |                5 |             16 |
+|  clk_IBUF_BUFG                      | CPU/DP/ALU/data_mem_reg[33][7]_0[0] |                              |                4 |             16 |
+|  clk_IBUF_BUFG                      | CPU/DP/ALU/data_mem_reg[36][7][0]   |                              |                3 |             16 |
+|  clk_IBUF_BUFG                      | CPU/DP/ALU/data_mem_reg[26][7][0]   |                              |                5 |             16 |
+|  clk_IBUF_BUFG                      | CPU/DP/ALU/data_mem_reg[37][7]_0[0] |                              |                4 |             16 |
+|  clk_IBUF_BUFG                      | CPU/DP/ALU/data_mem_reg[29][7][0]   |                              |                4 |             16 |
+|  clk_IBUF_BUFG                      | CPU/DP/ALU/data_mem_reg[30][7]_0[0] |                              |                7 |             16 |
+|  clk_IBUF_BUFG                      | CPU/DP/ALU/data_mem_reg[35][7][0]   |                              |                8 |             16 |
+|  clk_IBUF_BUFG                      | CPU/DP/ALU/data_mem_reg[2][7]_0[0]  |                              |                6 |             16 |
+|  clk_IBUF_BUFG                      | CPU/DP/ALU/data_mem_reg[39][7][0]   |                              |                6 |             16 |
+|  clk_IBUF_BUFG                      | CPU/DP/ALU/data_mem_reg[31][7]_0[0] |                              |                4 |             16 |
+|  clk_IBUF_BUFG                      | CPU/DP/ALU/data_mem_reg[32][7][0]   |                              |                6 |             16 |
+|  clk_IBUF_BUFG                      | CPU/DP/ALU/data_mem_reg[3][7][0]    |                              |                5 |             16 |
+|  clk_IBUF_BUFG                      | CPU/DP/ALU/data_mem_reg[8][7]_0[0]  |                              |                8 |             16 |
+|  clk_IBUF_BUFG                      | CPU/DP/ALU/data_mem_reg[5][7]_0[0]  |                              |                4 |             16 |
+|  clk_IBUF_BUFG                      | CPU/DP/ALU/data_mem_reg[9][7][0]    |                              |                6 |             16 |
+|  clk_IBUF_BUFG                      | CPU/DP/ALU/data_mem_reg[7][7][0]    |                              |                4 |             16 |
+|  clk_IBUF_BUFG                      | CPU/DP/ALU/data_mem_reg[4][7]_0[0]  |                              |                6 |             16 |
+|  clk_IBUF_BUFG                      | CPU/DP/ALU/data_mem_reg[40][7]_0[0] |                              |                6 |             16 |
+|  clk_IBUF_BUFG                      | CPU/DP/ALU/data_mem_reg[6][7][0]    |                              |                6 |             16 |
+|  clk_IBUF_BUFG                      | CPU/DP/ALU/E[0]                     |                              |                5 |             16 |
+|  clk_IBUF_BUFG                      | CPU/DP/ALU/data_mem_reg[12][7][0]   |                              |                4 |             16 |
+|  clk_IBUF_BUFG                      | CPU/DP/ALU/data_mem_reg[10][7][0]   |                              |                6 |             16 |
+|  clk_IBUF_BUFG                      | CPU/DP/ALU/data_mem_reg[11][7][0]   |                              |                3 |             16 |
+|  clk_IBUF_BUFG                      | CPU/DP/ALU/data_mem_reg[18][7][0]   |                              |                5 |             16 |
+|  clk_IBUF_BUFG                      | CPU/DP/ALU/data_mem_reg[20][7][0]   |                              |                6 |             16 |
+|  clk_IBUF_BUFG                      | CPU/DP/ALU/data_mem_reg[13][7][0]   |                              |                3 |             16 |
+|  clk_IBUF_BUFG                      | CPU/DP/ALU/data_mem_reg[15][7]_0[0] |                              |                3 |             16 |
+|  clk_IBUF_BUFG                      | CPU/DP/ALU/data_mem_reg[16][7]_0[0] |                              |                4 |             16 |
+|  clk_IBUF_BUFG                      | CPU/DP/ALU/data_mem_reg[17][7][0]   |                              |                4 |             16 |
+|  clk_IBUF_BUFG                      | CPU/DP/ALU/data_mem_reg[14][7]_0[0] |                              |                4 |             16 |
+|  clk_IBUF_BUFG                      | CPU/DP/ALU/data_mem_reg[19][7][0]   |                              |                3 |             16 |
+|  clk_IBUF_BUFG                      | CPU/DP/ALU/data_mem_reg[1][7][0]    |                              |                3 |             16 |
+|  clk_IBUF_BUFG                      | CPU/DP/ALU/data_mem_reg[22][7][0]   |                              |                6 |             16 |
+|  clk_IBUF_BUFG                      | CPU/DP/ALU/data_mem_reg[21][7][0]   |                              |                5 |             16 |
+|  clk_IBUF_BUFG                      |                                     |                              |                6 |             38 |
+|  clk_IBUF_BUFG                      |                                     | CPU/DP/PC/pc_out[31]_i_2_n_3 |               15 |             64 |
+|  n_2_100_BUFG                       |                                     |                              |               23 |             64 |
+|  n_1_897_BUFG                       |                                     |                              |               15 |             64 |
+|  n_0_1916_BUFG                      |                                     |                              |               24 |             84 |
+|  clk_IBUF_BUFG                      | CPU/DP/DC/rf_wr                     |                              |               12 |            192 |
++-------------------------------------+-------------------------------------+------------------------------+------------------+----------------+
+
+

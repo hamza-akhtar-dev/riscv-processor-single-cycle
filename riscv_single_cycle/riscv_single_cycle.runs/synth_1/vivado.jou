@@ -2,11 +2,11 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Sat Apr 30 19:33:00 2022
-# Process ID: 6652
+# Start of session at: Mon May  2 02:47:40 2022
+# Process ID: 12808
 # Current directory: C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.runs/synth_1
-# Command line: vivado.exe -log Test.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Test.tcl
-# Log file: C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.runs/synth_1/Test.vds
+# Command line: vivado.exe -log CPU_FPGA.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source CPU_FPGA.tcl
+# Log file: C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.runs/synth_1/CPU_FPGA.vds
 # Journal file: C:/Users/Hamza/Desktop/riscv-single-cycle/riscv_single_cycle/riscv_single_cycle.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
-source Test.tcl -notrace
+source CPU_FPGA.tcl -notrace

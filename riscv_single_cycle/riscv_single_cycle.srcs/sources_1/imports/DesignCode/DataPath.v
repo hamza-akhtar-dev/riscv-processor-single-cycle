@@ -8,7 +8,7 @@ module DataPath(
 	input[3:0] alu_op,
 	output[2:0] funct3, funct,
 	output[6:0] funct7,
-	output wire[31:0] pin
+	output wire[31:0] tag
 );
 
 wire br_taken;
@@ -25,7 +25,7 @@ Mux2x1 MX2 (sel_A, rdata1, pc_out, A);
 Mux2x1 MX3 (sel_B, rdata2, imm, B);
 BranchCondition BC (br_type, rdata1, rdata2, br_taken);
 RegisterFile RF (clk, rf_wr, rs1, rs2, rd, wdata, rdata1, rdata2);
-DataMemory DM (clk, mem_rd, mem_wr, mem_mode, alu_out, rdata2, rdata, pin);
+DataMemory DM (clk, mem_rd, mem_wr, mem_mode, alu_out, rdata2, rdata, tag);
 Mux4x1 MX4 (wb_sel, alu_out, rdata, pc_out + PC4, 32'd0, wdata);
 ArithmeticLogicUnit ALU (alu_op, A, B, alu_out);
 
