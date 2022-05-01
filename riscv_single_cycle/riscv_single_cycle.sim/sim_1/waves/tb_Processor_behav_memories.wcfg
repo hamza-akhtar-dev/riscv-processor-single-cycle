@@ -12,20 +12,327 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="391904256fs"></ZoomEndTime>
-      <Cursor1Time time="187000000fs"></Cursor1Time>
+      <ZoomEndTime time="108472561fs"></ZoomEndTime>
+      <Cursor1Time time="0fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="116"></NameColumnWidth>
-      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+      <NameColumnWidth column_width="199"></NameColumnWidth>
+      <ValueColumnWidth column_width="311"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="2" />
-   <wvobject fp_name="/tb_Processor/UUT/DP/DM/data_mem" type="array">
-      <obj_property name="ElementShortName">data_mem[15:0][7:0]</obj_property>
-      <obj_property name="ObjectShortName">data_mem[15:0][7:0]</obj_property>
+   <WVObjectSize size="23" />
+   <wvobject fp_name="/tb_Processor/UUT/DP/RF/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Processor/UUT/DP/pc_in" type="array">
+      <obj_property name="ElementShortName">pc_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_in[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Processor/UUT/DP/pc_out" type="array">
+      <obj_property name="ElementShortName">pc_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_out[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Processor/UUT/DP/DC/instruction" type="array">
+      <obj_property name="ElementShortName">instruction[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instruction[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Processor/UUT/DP/DC/funct" type="array">
+      <obj_property name="ElementShortName">funct[2:0]</obj_property>
+      <obj_property name="ObjectShortName">funct[2:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Processor/UUT/DP/rs1" type="array">
+      <obj_property name="ElementShortName">rs1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rs1[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Processor/UUT/DP/rs2" type="array">
+      <obj_property name="ElementShortName">rs2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rs2[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Processor/UUT/DP/rd" type="array">
+      <obj_property name="ElementShortName">rd[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rd[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Processor/UUT/DP/ALU/ALUop" type="array">
+      <obj_property name="ElementShortName">ALUop[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUop[3:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Processor/UUT/DP/ALU/operand_1" type="array">
+      <obj_property name="ElementShortName">operand_1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">operand_1[31:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Processor/UUT/DP/ALU/operand_2" type="array">
+      <obj_property name="ElementShortName">operand_2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">operand_2[31:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Processor/UUT/DP/ALU/ALUresult" type="array">
+      <obj_property name="ElementShortName">ALUresult[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUresult[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Processor/UUT/DP/DC/imm" type="array">
+      <obj_property name="ElementShortName">imm[31:0]</obj_property>
+      <obj_property name="ObjectShortName">imm[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Processor/UUT/DP/DM/memRead" type="logic">
+      <obj_property name="ElementShortName">memRead</obj_property>
+      <obj_property name="ObjectShortName">memRead</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Processor/UUT/DP/DM/memWrite" type="logic">
+      <obj_property name="ElementShortName">memWrite</obj_property>
+      <obj_property name="ObjectShortName">memWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Processor/UUT/DP/DM/mem_mode" type="array">
+      <obj_property name="ElementShortName">mem_mode[1:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_mode[1:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Processor/UUT/DP/DM/addr" type="array">
+      <obj_property name="ElementShortName">addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">addr[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Processor/UUT/DP/DM/rdata" type="array">
+      <obj_property name="ElementShortName">rdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rdata[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Processor/UUT/DP/RF/wdata" type="array">
+      <obj_property name="ElementShortName">wdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wdata[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Processor/UUT/DP/BC/br_type" type="array">
+      <obj_property name="ElementShortName">br_type[2:0]</obj_property>
+      <obj_property name="ObjectShortName">br_type[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Processor/UUT/DP/BC/br_taken" type="logic">
+      <obj_property name="ElementShortName">br_taken</obj_property>
+      <obj_property name="ObjectShortName">br_taken</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_Processor/UUT/DP/RF/register_mem" type="array">
       <obj_property name="ElementShortName">register_mem[31:0][31:0]</obj_property>
       <obj_property name="ObjectShortName">register_mem[31:0][31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Processor/UUT/DP/DM/data_mem" type="array">
+      <obj_property name="ElementShortName">data_mem[40:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_mem[40:0][7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <wvobject fp_name="/tb_Processor/UUT/DP/DM/data_mem[40]" type="array">
+         <obj_property name="ElementShortName">[40][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[40][7:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_Processor/UUT/DP/DM/data_mem[39]" type="array">
+         <obj_property name="ElementShortName">[39][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[39][7:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_Processor/UUT/DP/DM/data_mem[38]" type="array">
+         <obj_property name="ElementShortName">[38][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[38][7:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_Processor/UUT/DP/DM/data_mem[37]" type="array">
+         <obj_property name="ElementShortName">[37][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[37][7:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_Processor/UUT/DP/DM/data_mem[36]" type="array">
+         <obj_property name="ElementShortName">[36][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[36][7:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_Processor/UUT/DP/DM/data_mem[35]" type="array">
+         <obj_property name="ElementShortName">[35][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[35][7:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_Processor/UUT/DP/DM/data_mem[34]" type="array">
+         <obj_property name="ElementShortName">[34][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[34][7:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_Processor/UUT/DP/DM/data_mem[33]" type="array">
+         <obj_property name="ElementShortName">[33][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[33][7:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_Processor/UUT/DP/DM/data_mem[32]" type="array">
+         <obj_property name="ElementShortName">[32][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[32][7:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_Processor/UUT/DP/DM/data_mem[31]" type="array">
+         <obj_property name="ElementShortName">[31][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[31][7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_Processor/UUT/DP/DM/data_mem[30]" type="array">
+         <obj_property name="ElementShortName">[30][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[30][7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_Processor/UUT/DP/DM/data_mem[29]" type="array">
+         <obj_property name="ElementShortName">[29][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[29][7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_Processor/UUT/DP/DM/data_mem[28]" type="array">
+         <obj_property name="ElementShortName">[28][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[28][7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_Processor/UUT/DP/DM/data_mem[27]" type="array">
+         <obj_property name="ElementShortName">[27][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[27][7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_Processor/UUT/DP/DM/data_mem[26]" type="array">
+         <obj_property name="ElementShortName">[26][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[26][7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_Processor/UUT/DP/DM/data_mem[25]" type="array">
+         <obj_property name="ElementShortName">[25][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[25][7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_Processor/UUT/DP/DM/data_mem[24]" type="array">
+         <obj_property name="ElementShortName">[24][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[24][7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_Processor/UUT/DP/DM/data_mem[23]" type="array">
+         <obj_property name="ElementShortName">[23][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[23][7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_Processor/UUT/DP/DM/data_mem[22]" type="array">
+         <obj_property name="ElementShortName">[22][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[22][7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_Processor/UUT/DP/DM/data_mem[21]" type="array">
+         <obj_property name="ElementShortName">[21][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[21][7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_Processor/UUT/DP/DM/data_mem[20]" type="array">
+         <obj_property name="ElementShortName">[20][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[20][7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_Processor/UUT/DP/DM/data_mem[19]" type="array">
+         <obj_property name="ElementShortName">[19][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[19][7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_Processor/UUT/DP/DM/data_mem[18]" type="array">
+         <obj_property name="ElementShortName">[18][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[18][7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_Processor/UUT/DP/DM/data_mem[17]" type="array">
+         <obj_property name="ElementShortName">[17][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[17][7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_Processor/UUT/DP/DM/data_mem[16]" type="array">
+         <obj_property name="ElementShortName">[16][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[16][7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_Processor/UUT/DP/DM/data_mem[15]" type="array">
+         <obj_property name="ElementShortName">[15][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[15][7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_Processor/UUT/DP/DM/data_mem[14]" type="array">
+         <obj_property name="ElementShortName">[14][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[14][7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_Processor/UUT/DP/DM/data_mem[13]" type="array">
+         <obj_property name="ElementShortName">[13][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[13][7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_Processor/UUT/DP/DM/data_mem[12]" type="array">
+         <obj_property name="ElementShortName">[12][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[12][7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_Processor/UUT/DP/DM/data_mem[11]" type="array">
+         <obj_property name="ElementShortName">[11][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[11][7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_Processor/UUT/DP/DM/data_mem[10]" type="array">
+         <obj_property name="ElementShortName">[10][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[10][7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_Processor/UUT/DP/DM/data_mem[9]" type="array">
+         <obj_property name="ElementShortName">[9][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[9][7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_Processor/UUT/DP/DM/data_mem[8]" type="array">
+         <obj_property name="ElementShortName">[8][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[8][7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_Processor/UUT/DP/DM/data_mem[7]" type="array">
+         <obj_property name="ElementShortName">[7][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[7][7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_Processor/UUT/DP/DM/data_mem[6]" type="array">
+         <obj_property name="ElementShortName">[6][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[6][7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_Processor/UUT/DP/DM/data_mem[5]" type="array">
+         <obj_property name="ElementShortName">[5][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[5][7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_Processor/UUT/DP/DM/data_mem[4]" type="array">
+         <obj_property name="ElementShortName">[4][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[4][7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_Processor/UUT/DP/DM/data_mem[3]" type="array">
+         <obj_property name="ElementShortName">[3][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_Processor/UUT/DP/DM/data_mem[2]" type="array">
+         <obj_property name="ElementShortName">[2][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_Processor/UUT/DP/DM/data_mem[1]" type="array">
+         <obj_property name="ElementShortName">[1][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_Processor/UUT/DP/DM/data_mem[0]" type="array">
+         <obj_property name="ElementShortName">[0][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
    </wvobject>
 </wave_config>

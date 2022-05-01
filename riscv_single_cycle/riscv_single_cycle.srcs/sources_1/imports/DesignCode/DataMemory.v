@@ -7,14 +7,13 @@ module DataMemory(
 	input [31:0] wdata,
 	output reg [31:0] rdata,
 	output wire [31:0] pin
-	
 );
 
 parameter Byte = 2'b00;
 parameter HalfWord = 2'b01;
 parameter Word = 2'b10;
 
-reg [7:0] data_mem [15:0];
+reg [7:0] data_mem [40:0];
 
 //assign pin = data_mem[2][31:0];
 
@@ -54,23 +53,18 @@ always@(*)
 begin
     if(memRead)
 	begin
-	   rdata = 32'h00000000;
 	   case(mem_mode)
 	       Byte: 
 	       begin
-	            rdata[7:0] <= data_mem[addr];
+	            rdata <= $signed(data_mem[addr]);
 	       end
 	       HalfWord: 
 	       begin
-	           rdata[7:0] <= data_mem[addr];
-	           rdata[15:8] <= data_mem[addr+1];
+	            rdata <= $signed({data_mem[addr+1], data_mem[addr]});
 	       end
 	       Word: 
 	       begin
-	          rdata[7:0] <= data_mem[addr];
-	          rdata[15:8] <= data_mem[addr+1];
-	          rdata[23:16] <= data_mem[addr+2];
-	          rdata[31:24] <= data_mem[addr+3];
+	            rdata <= $signed({data_mem[addr+3], data_mem[addr+2], data_mem[addr+1], data_mem[addr]});
 	       end
 	   endcase
 	end

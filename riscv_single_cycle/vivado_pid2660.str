@@ -22313,3 +22313,5 @@ selectMenuItem((HResource) null, "Unsigned Decimal"); // R (aG)
 // HMemoryUtils.trashcanNow. Engine heap size: 672 MB. GUI used memory: 63 MB. Current time: 5/1/22 12:46:23 AM PKT
 // TclEventType: WAVEFORM_UPDATE_WAVEFORM
 // HMemoryUtils.trashcanNow. Engine heap size: 672 MB. GUI used memory: 63 MB. Current time: 5/1/22 12:46:25 AM PKT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
