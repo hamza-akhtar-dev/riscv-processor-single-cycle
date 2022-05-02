@@ -50,7 +50,9 @@ Xilinix Nexys A7:tm: *xc7a100tcsg324-1*
 ### Description
 ![algo](https://github.com/HamxaCodes/RiscV-Single-Cycle/blob/media/algorithm.png?raw=true)
 
-###
+###Assembly Code
+![code](https://github.com/HamxaCodes/RiscV-Single-Cycle/blob/media/instr.png?raw=true)
+
 
 
 
