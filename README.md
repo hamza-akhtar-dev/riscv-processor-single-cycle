@@ -11,15 +11,17 @@ This is a Verilog implementation of [RISC-V](https://riscv.org/) Instruction Set
 ### Getting Started
 
 1. Install Vivado Hlx design suite 2018.2 (recommended)
-2. Browse code and open **riscv_single_cycle.xpr** project file in vivado
-3. Run behavioural simulation and check the outputs
-4. **Sythesize** the model
-5. Set constraints and **implement** the model
-6. Generate **bit stream** and upload it to FPGA.
+2. Clone repository and include **design**, **simulation** and **constraint** sources in vivado project
+3. Run behavioural simulation and open the waveform configuration file
+4. **Synthesize** the model
+5. Set constraints and run **implementation**
+6. Generate **bit stream** and upload it to FPGA
 
-### Demo
+### FPGA
 
-![Demo Video](https://github.com/HamxaCodes/riscv-single-cycle/blob/media/wave_demo.mp4)
+Xilinix Nexys A7:tm: *xc7a100tcsg324-1*
+
+![FPGA]()
 
 
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
