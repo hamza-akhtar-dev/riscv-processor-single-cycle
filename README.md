@@ -46,6 +46,9 @@ Xilinix Nexys A7:tm: *xc7a100tcsg324-1*
 ### 600 to 700ns
 ![wave600to700](https://github.com/HamxaCodes/RiscV-Single-Cycle/blob/media/wave7.png?raw=true)
 
+### Seven Segment Interfacing Output
+![wave7seg](https://github.com/HamxaCodes/RiscV-Single-Cycle/blob/media/wave8.png?raw=true)
+
 ## Algorithm
 ### Description
 - Data memory has eight 8-bit numbers placed at the starting address of 0x1C.
@@ -55,6 +58,7 @@ Xilinix Nexys A7:tm: *xc7a100tcsg324-1*
 
 ### Assembly Code
 ![code](https://github.com/HamxaCodes/RiscV-Single-Cycle/blob/media/instr.png?raw=true)
+
 
 
 
