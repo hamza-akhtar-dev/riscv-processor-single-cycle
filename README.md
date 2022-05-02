@@ -11,12 +11,12 @@ This is a Verilog implementation of [RISC-V](https://riscv.org/) Instruction Set
   
 ### Getting Started
 
-1. Install Vivado Hlx design suite 2018.2 (recommended)
-2. Clone repository and include **design**, **simulation** and **constraint** sources in vivado project
-3. Run behavioural simulation and open the waveform configuration file
-4. **Synthesize** the model
-5. Set constraints and run **implementation**
-6. Generate **bit stream** and upload it to FPGA
+1. Install Vivado Hlx design suite 2018.2 (recommended).
+2. Clone repository and include **design**, **simulation** and **constraint** sources in vivado project.
+3. Run behavioural simulation and open the waveform configuration file.
+4. **Synthesize** the model.
+5. Set constraints and run **implementation**.
+6. Generate **bit stream** and upload it to FPGA.
 
 ### FPGA
 
@@ -48,9 +48,12 @@ Xilinix Nexys A7:tm: *xc7a100tcsg324-1*
 
 ## Algorithm
 ### Description
-![algo](https://github.com/HamxaCodes/RiscV-Single-Cycle/blob/media/algorithm.png?raw=true)
+- Data memory has eight 8-bit numbers placed at the starting address of 0x1C.
+- Find the largest and the smallest number and display them on the seven segment.
+- If the largest number is greater than 50 shift it left by 4 bits, subtract 20 from it and XOR it with 0xFFF else place the 1234567 in the uppermost bits of the largest number then shift it right by 2 bits and then add the smallest number to it.
+- Store the results in the memory.
 
-###Assembly Code
+### Assembly Code
 ![code](https://github.com/HamxaCodes/RiscV-Single-Cycle/blob/media/instr.png?raw=true)
 
 
