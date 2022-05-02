@@ -46,5 +46,12 @@ Xilinix Nexys A7:tm: *xc7a100tcsg324-1*
 ### 600 to 700ns
 ![wave600to700](https://github.com/HamxaCodes/RiscV-Single-Cycle/blob/media/wave7.png?raw=true)
 
+## Algorithm
+### Description
+![algo](https://github.com/HamxaCodes/RiscV-Single-Cycle/blob/media/algorithm.png?raw=true)
+
+###
+
+
 
 
