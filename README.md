@@ -25,25 +25,25 @@ Xilinix Nexys A7:tm: *xc7a100tcsg324-1*
 ![FPGA](https://github.com/HamxaCodes/RiscV-Single-Cycle/blob/media/nexys_a7.jpg?raw=true)
 
 ## Simulations
-# 0 to 100ns
+### 0 to 100ns
 ![wave0to100](https://github.com/HamxaCodes/RiscV-Single-Cycle/blob/media/wave1.png?raw=true)
 
-# 100 to 200ns
+### 100 to 200ns
 ![wave100to200](https://github.com/HamxaCodes/RiscV-Single-Cycle/blob/media/wave2.png?raw=true)
 
-# 200 to 300ns
+### 200 to 300ns
 ![wave200to300](https://github.com/HamxaCodes/RiscV-Single-Cycle/blob/media/wave3.png?raw=true)
 
-# 300 to 400ns
+### 300 to 400ns
 ![wave300to400](https://github.com/HamxaCodes/RiscV-Single-Cycle/blob/media/wave4.png?raw=true)
 
-# 400 to 500ns
+### 400 to 500ns
 ![wave400to500](https://github.com/HamxaCodes/RiscV-Single-Cycle/blob/media/wave5.png?raw=true)
 
-# 500 to 600ns
+### 500 to 600ns
 ![wave500to600](https://github.com/HamxaCodes/RiscV-Single-Cycle/blob/media/wave6.png?raw=true)
 
-# 600 to 700ns
+### 600 to 700ns
 ![wave600to700](https://github.com/HamxaCodes/RiscV-Single-Cycle/blob/media/wave7.png?raw=true)
 
 
