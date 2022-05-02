@@ -1,19 +1,26 @@
 This is a Verilog implementation of [RISC-V](https://riscv.org/) Instruction Set Architecture (ISA) 
-## ⏮Preview
+
+### Supported Instructions
+- *R-Type:* ADD, SUB, OR, AND, SLL, SRL, SRA, SLT, SLTU
+- *I-Type:* ADDI, ORI, ANDI, SLLI, SRLI, SLTI, LW, LH, LB
+- *S-Type:* SW, SH, SB
+- *B-Type:* BEQ, BNE, BLT
+- *J-Type:* JAL, JALR
+- *U-Type:* LUI
   
-![next-streaming-app](https://user-images.githubusercontent.com/46846821/132138231-64fcb497-f64a-43cf-8b99-5641afdd03de.gif)
+### Getting Started
 
-## Getting Started
+1. Install Vivado Hlx design suite 2018.2 (recommended)
+2. Browse code and open **riscv_single_cycle.xpr** project file in vivado
+3. Run behavioural simulation and check the outputs
+4. **Sythesize** the model
+5. Set constraints and **implement** the model
+6. Generate **bit stream** and upload it to FPGA.
 
-First, run the development server:
+### Demo
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+![Demo Video](https://github.com/HamxaCodes/riscv-single-cycle/blob/media/wave_demo.mp4)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
@@ -35,3 +42,4 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
