@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_CPU_FPGA_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_CPU_FPGA" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="686560000fs"></ZoomStartTime>
+      <ZoomEndTime time="701060001fs"></ZoomEndTime>
+      <Cursor1Time time="0fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="199"></NameColumnWidth>
+      <ValueColumnWidth column_width="79"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="23" />
+   <wvobject fp_name="/tb_CPU_FPGA/UUT/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_CPU_FPGA/UUT/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_CPU_FPGA/UUT/CPU/DP/PC/pc_out" type="array">
+      <obj_property name="ElementShortName">pc_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_out[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_CPU_FPGA/UUT/CPU/DP/PC/pc_in" type="array">
+      <obj_property name="ElementShortName">pc_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_in[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_CPU_FPGA/UUT/CPU/DP/DC/instruction" type="array">
+      <obj_property name="ElementShortName">instruction[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instruction[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_CPU_FPGA/UUT/CPU/DP/DC/rs1" type="array">
+      <obj_property name="ElementShortName">rs1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rs1[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_CPU_FPGA/UUT/CPU/DP/DC/rs2" type="array">
+      <obj_property name="ElementShortName">rs2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rs2[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_CPU_FPGA/UUT/CPU/DP/DC/rd" type="array">
+      <obj_property name="ElementShortName">rd[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rd[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_CPU_FPGA/UUT/CPU/DP/DC/funct" type="array">
+      <obj_property name="ElementShortName">funct[2:0]</obj_property>
+      <obj_property name="ObjectShortName">funct[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_CPU_FPGA/UUT/CPU/DP/DC/type" type="array">
+      <obj_property name="ElementShortName">type[2:0]</obj_property>
+      <obj_property name="ObjectShortName">type[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_CPU_FPGA/UUT/CPU/DP/ALU/ALUop" type="array">
+      <obj_property name="ElementShortName">ALUop[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUop[3:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_CPU_FPGA/UUT/CPU/DP/ALU/operand_1" type="array">
+      <obj_property name="ElementShortName">operand_1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">operand_1[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_CPU_FPGA/UUT/CPU/DP/ALU/operand_2" type="array">
+      <obj_property name="ElementShortName">operand_2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">operand_2[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_CPU_FPGA/UUT/CPU/DP/ALU/ALUresult" type="array">
+      <obj_property name="ElementShortName">ALUresult[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUresult[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_CPU_FPGA/UUT/CPU/DP/DM/mem_mode" type="array">
+      <obj_property name="ElementShortName">mem_mode[1:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_mode[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_CPU_FPGA/UUT/CPU/DP/DM/memRead" type="logic">
+      <obj_property name="ElementShortName">memRead</obj_property>
+      <obj_property name="ObjectShortName">memRead</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_CPU_FPGA/UUT/CPU/DP/DM/memWrite" type="logic">
+      <obj_property name="ElementShortName">memWrite</obj_property>
+      <obj_property name="ObjectShortName">memWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_CPU_FPGA/UUT/CPU/DP/DM/addr" type="array">
+      <obj_property name="ElementShortName">addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">addr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_CPU_FPGA/UUT/CPU/DP/DM/wdata" type="array">
+      <obj_property name="ElementShortName">wdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wdata[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_CPU_FPGA/UUT/CPU/DP/DM/rdata" type="array">
+      <obj_property name="ElementShortName">rdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rdata[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_CPU_FPGA/UUT/CPU/DP/BC/br_type" type="array">
+      <obj_property name="ElementShortName">br_type[2:0]</obj_property>
+      <obj_property name="ObjectShortName">br_type[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_CPU_FPGA/UUT/CPU/DP/BC/br_taken" type="logic">
+      <obj_property name="ElementShortName">br_taken</obj_property>
+      <obj_property name="ObjectShortName">br_taken</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_CPU_FPGA/UUT/CPU/DP/DM/data_mem" type="array">
+      <obj_property name="ElementShortName">data_mem[40:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_mem[40:0][7:0]</obj_property>
+   </wvobject>
+</wave_config>
